@@ -1,0 +1,45 @@
+.td img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.teknik_ekip{
+    margin-top: 0.75rem;
+    display: flex;
+    background-image: url("img/kurucular.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    align-items: center;
+}
+
+.td{
+    width: 25%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 15px 15px 8px blanchedalmond;
+    border: 1px solid grey;
+    margin: 0 5px;
+}
+/*mobil ekrandayken */ 
+@media (max-width:768px){
+    .teknik_ekip{
+        flex-direction: column;
+        height: auto; /*elementler kadar uzasın */
+    }
+    .td
+    {
+        width: 75%; /*sütün uzunluğu büyür */
+        margin: 5px 0;
+    }
+    .td:hover
+    {
+        transform:scale(1.03);
+        transition: 0.5s;
+    }
+}

@@ -1,0 +1,47 @@
+.kupa img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.kupalar{
+    display: flex;
+    height: 400px;
+    align-items: center;
+    width: 100%;
+    background-image: url("img/161866893724382525.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.kupa { /*ufak kupa düzenleme */ 
+    width: 25%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*column da ortlama */ 
+    border-top: 3px solid yellow;
+    border-bottom: 3px solid red;
+    box-shadow: 10px 10px 5px black;
+}
+
+/*responsive tasarıma çevirme */
+
+@media (max-width:768px) {
+    .kupalar{
+        flex-direction: column;
+        align-items: center; /*her item ortalı şekilde */
+        height: auto;
+    }
+    .kupa{
+        /*768 px geldiğinde kupaların genisliği 
+        */
+        width: 50%;
+    }
+    .kupa:hover{
+        transform: scale(1.02);
+        transition: 0.5;
+    }
+    
+    
+}
