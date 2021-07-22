@@ -1,2 +1,2 @@
 # Taraftar-Sitesi
-HTML CSS BOOTSTRAP
+HTML CSS BOOTSTRAP kullanılmıştır arayüzünde taraftar sitesi file indirip direk açılabilir.
